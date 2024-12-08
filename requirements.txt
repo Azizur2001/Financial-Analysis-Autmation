@@ -1,0 +1,15 @@
+streamlit
+pinecone-client
+sentence-transformers
+openai
+yfinance
+pandas
+plotly
+matplotlib
+re
+groq
+python-dotenv
+newsapi-python
+requests
+langchain
+python-dotenv
