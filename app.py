@@ -18,16 +18,13 @@ import requests
 load_dotenv()
 
 # Set API keys
-# openai_api_key = os.getenv("OPENAI_API_KEY")
-# pinecone_api_key = os.getenv("PINECONE_API_KEY")
-# pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
-# groq_api_key = os.getenv("GROQ_API_KEY")
-# newsapi_key = os.getenv("NEWSAPI_KEY")
-openai_api_key = st.secrets["OPENAI_API_KEY"]
-pinecone_api_key = st.secrets["PINECONE_API_KEY"]
-groq_api_key = st.secrets["GROQ_API_KEY"]
-newsapi_key = st.secrets["NEWSAPI_KEY"]
+openai_api_key = os.getenv("OPENAI_API_KEY")
+pinecone_api_key = os.getenv("PINECONE_API_KEY")
+pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
+groq_api_key = os.getenv("GROQ_API_KEY")
+newsapi_key = os.getenv("NEWSAPI_KEY")
 newsapi = NewsApiClient(api_key=newsapi_key)
+
 client = openai
 client2 = Groq(api_key=groq_api_key)
 
