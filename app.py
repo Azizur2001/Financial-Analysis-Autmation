@@ -8,7 +8,6 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import re
 from groq import Groq
-from google.colab import userdata
 from dotenv import load_dotenv
 import os
 from newsapi import NewsApiClient
