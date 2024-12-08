@@ -108,7 +108,7 @@ def generate_factor_explanations(stock_data):
                 f"Description: {stock['description']}"
             )
             chat_completion = client2.chat.completions.create(
-                model="llama-3.1-70b-versatile",
+                model="llama-3.1-8b-instant",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": stock_description}
@@ -314,7 +314,7 @@ def process_with_llm(query, stock_data=None):
 
         # Use the Groq LLM for generating the response
         chat_completion = client2.chat.completions.create(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.1-8b-instant",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": f"Query: {query}\n\nStock Data:\n{formatted_data}"}
