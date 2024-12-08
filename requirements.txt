@@ -11,4 +11,4 @@ python-dotenv
 newsapi-python
 requests
 langchain
-python-dotenv
+
